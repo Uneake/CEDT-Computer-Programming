@@ -8,7 +8,7 @@ main(){
   c = sqrt((x_e-x_m)*(x_e-x_m) + (y_e-y_m)*(y_e-y_m));
   dr = r_e - r_p;
   double x_p, y_p;
-  x_p = (x_e*(c-dr)+x_m*dr)/c;
-  y_p = (y_e*(c-dr)+y_m*dr)/c;
+  x_p = (x_e*(c-dr)+x_m*dr)/c; //section formula
+  y_p = (y_e*(c-dr)+y_m*dr)/c; //section formula
   std::cout<<round(x_p)<<" "<<round(y_p);
 }

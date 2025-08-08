@@ -11,10 +11,11 @@ int main() {
  int dh,dm,ds;
  ds = t2 - t1;
  ds += day; 
- ds %= day;
+ ds %= day; //note that (a+m)%m = a%m but in c++ negative-number%m will be negative, so we need to add 1 day before %
  dh = ds / (60*60);
  ds -= dh * 60*60;
  dm = ds / 60;
  ds -= dm*60;
  cout << dh << ':' << dm << ':' << ds;
+
 }

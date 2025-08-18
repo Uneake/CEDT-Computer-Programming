@@ -15,10 +15,12 @@ main(){
         i += a; 
       }
     }
-    if((text[i]==' '||text[i]=='"'||text[i]=='.'||text[i]==','||text[i]=='\''||text[i]=='('||text[i]==')') && text.substr(i+1,a) == s && (!isalpha(text[i+a +1])||i+a+1>=n)){
+    if((text[i]==' '||text[i]=='"'||text[i]=='.'||text[i]==','||text[i]=='\''||text[i]=='('||text[i]==')') && 
+        text.substr(i+1,a) == s && (!isalpha(text[i+a +1])||i+a+1>=n)){
       co++;
       i += a; 
     }
   }
   std::cout<<co;
+
 }

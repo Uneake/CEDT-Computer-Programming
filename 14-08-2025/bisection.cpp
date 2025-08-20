@@ -8,8 +8,8 @@ main(){
   x=(u+l)/2.0;
   k=pow(10,x)-a;
   if(k<0) k=-k;
+  t=pow(10,x);
   while(k>0.0000000001*std::max(t,a)){
-    t=pow(10,x);
     if(t<a) l=x;
     else u=x;
     x=(u+l)/double(2.0);
@@ -19,3 +19,4 @@ main(){
    }
   std::cout<<x;
 }
+

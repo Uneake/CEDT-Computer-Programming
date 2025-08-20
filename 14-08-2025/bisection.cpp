@@ -12,11 +12,12 @@ main(){
   while(k>0.0000000001*std::max(t,a)){
     if(t<a) l=x;
     else u=x;
-    x=(u+l)/double(2.0);
+    x=(u+l)/2.0;
     t=pow(10,x);
     k=t-a;
     if(k<0) k=-k;
    }
   std::cout<<x;
 }
+
 
